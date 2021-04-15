@@ -2,6 +2,8 @@
 
 This repository is for the paper - [Knowledge Enhance Masked Language Model for Stance Detection](https://2021.naacl.org/program/accepted/), NAACL 2021. 🚀
 
+Code for log-odds-ratio with Dirichlet prior is at [log-odds-ratio](https://github.com/kornosk/log-odds-ratio) repository.
+
 ## Data Sets
 
 This data sets are for research purposes only - coming soon 🔥
