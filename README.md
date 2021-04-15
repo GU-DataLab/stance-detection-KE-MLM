@@ -34,7 +34,9 @@ All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗
 
 ## Usage
 
-Please see specific model pages above for more usage detail. Below is a sample use case.
+We tested in `pytorch v1.8.1` and `transformers v4.5.1`.
+
+Please see specific model pages above for more usage detail. Below is a sample use case. 
 
 ### 1. Choose and load model for stance detection
 
