@@ -26,7 +26,7 @@ On each pre-trained language model, we trained for the downstream stance detecti
 
 All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗
 
-- [BERT-Election-2020-Twitter-General-Purpose](https://huggingface.co/kornosk/bert-election2020-twitter-general) - Feel free to fine-tune this to any downstream task 🎯
+- [BERT-Political-Election-2020-Twitter-MLM](https://huggingface.co/kornosk/bert-political-election2020-twitter-mlm) - Feel free to fine-tune this to any downstream task 🎯
 - [BERT-Election-2020-Twitter-Stance-Biden-f-BERT](https://huggingface.co/kornosk/bert-election2020-twitter-stance-biden)
 - [BERT-Election-2020-Twitter-Stance-Biden-KE-MLM](https://huggingface.co/kornosk/bert-election2020-twitter-stance-biden-KE-MLM)
 - [BERT-Election-2020-Twitter-Stance-Trump-f-BERT](https://huggingface.co/kornosk/bert-election2020-twitter-stance-trump)
