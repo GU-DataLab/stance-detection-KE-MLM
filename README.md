@@ -34,7 +34,7 @@ All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗
 
 Please see specific model pages above for more usage detail. Below is a sample use case.
 
-### 1. Load model for stance detection towards Joe Biden
+### 1. Choose and load model for stance detection
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -58,7 +58,7 @@ id2label = {
 }
 ```
 
-### 2. See sample predictions
+### 2. See some sample predictions
 
 ```python
 ##### Prediction Neutral #####
