@@ -54,7 +54,11 @@ id2label = {
     1: "FAVOR",
     2: "NONE"
 }
+```
 
+## See some samples
+
+```python
 ##### Prediction Neutral #####
 sentence = "Hello World."
 inputs = tokenizer(sentence.lower(), return_tensors="pt")
