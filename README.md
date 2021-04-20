@@ -8,7 +8,8 @@ Code for log-odds-ratio with Dirichlet prior is at [log-odds-ratio](https://gith
 
 This data sets are for research purposes only - coming soon 🔥
 
-- Data format is CSV with only 3 columns `"tweet_id","text","label"`
+- Data format is CSV with only 3 columns: `"tweet_id","text","label"`
+- Labels = `{0:"AGAINST", 1:"FAVOR", 2:"NONE"}`
 
 The data set contains 2500 manually-stance-labeled tweets, 1250 for each candidate (Joe Biden and Donald Trump). These tweets were sampled from the unlabeled set that our research team collected English tweets related to the 2020 US Presidential election. Through the Twitter Streaming API, we collected data using election-related hashtags and keywords. Between January 2020 and September 2020, we collected over 5 million tweets, not including quotes and retweets. These unlabeled tweets were used to fine-tune all of our language models.
 
@@ -26,7 +27,7 @@ On each pre-trained language model, we trained for the downstream stance detecti
 
 ## Pre-trained Models
 
-All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗
+All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗 so you can load model with **just three lines of code**!!!
 
 - [BERT-Political-Election-2020-Twitter-MLM](https://huggingface.co/kornosk/bert-political-election2020-twitter-mlm) - Feel free to fine-tune this to any downstream task 🎯
 - [BERT-Election-2020-Twitter-Stance-Biden-f-BERT](https://huggingface.co/kornosk/bert-election2020-twitter-stance-biden)
@@ -47,52 +48,24 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import numpy as np
 
-# choose GPU if available
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 # select mode path here
 pretrained_LM_path = "kornosk/bert-election2020-twitter-stance-biden"
 
 # load model
 tokenizer = AutoTokenizer.from_pretrained(pretrained_LM_path)
 model = AutoModelForSequenceClassification.from_pretrained(pretrained_LM_path)
+```
 
+### 2. Get a prediction (see more in `sample_predict.py`)
+```python
 id2label = {
     0: "AGAINST",
     1: "FAVOR",
     2: "NONE"
 }
-```
-
-### 2. See some sample predictions
-
-```python
-##### Prediction Neutral #####
-sentence = "Hello World."
-inputs = tokenizer(sentence.lower(), return_tensors="pt")
-outputs = model(**inputs)
-predicted_probability = torch.softmax(outputs[0], dim=1)[0].tolist()
-
-print("Sentence:", sentence)
-print("Prediction:", id2label[np.argmax(predicted_probability)])
-print("Against:", predicted_probability[0])
-print("Favor:", predicted_probability[1])
-print("Neutral:", predicted_probability[2])
 
 ##### Prediction Favor #####
 sentence = "Go Go Biden!!!"
-inputs = tokenizer(sentence.lower(), return_tensors="pt")
-outputs = model(**inputs)
-predicted_probability = torch.softmax(outputs[0], dim=1)[0].tolist()
-
-print("Sentence:", sentence)
-print("Prediction:", id2label[np.argmax(predicted_probability)])
-print("Against:", predicted_probability[0])
-print("Favor:", predicted_probability[1])
-print("Neutral:", predicted_probability[2])
-
-##### Prediction Against #####
-sentence = "Biden is the worst."
 inputs = tokenizer(sentence.lower(), return_tensors="pt")
 outputs = model(**inputs)
 predicted_probability = torch.softmax(outputs[0], dim=1)[0].tolist()
