@@ -8,7 +8,7 @@ Code for log-odds-ratio with Dirichlet prior is at [log-odds-ratio](https://gith
 
 This data sets are for research purposes only - coming soon 🔥
 
-Data Format: CSV with only 3 columns `"tweet_id","text","label"`
+- Data format is CSV with only 3 columns `"tweet_id","text","label"`
 
 The data set contains 2500 manually-stance-labeled tweets, 1250 for each candidate (Joe Biden and Donald Trump). These tweets were sampled from the unlabeled set that our research team collected English tweets related to the 2020 US Presidential election. Through the Twitter Streaming API, we collected data using election-related hashtags and keywords. Between January 2020 and September 2020, we collected over 5 million tweets, not including quotes and retweets. These unlabeled tweets were used to fine-tune all of our language models.
 
