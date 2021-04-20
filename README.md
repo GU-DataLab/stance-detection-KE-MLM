@@ -49,7 +49,8 @@ import torch
 import numpy as np
 
 # select mode path here
-pretrained_LM_path = "kornosk/bert-election2020-twitter-stance-biden"
+# see more at https://huggingface.co/kornosk
+pretrained_LM_path = "kornosk/bert-election2020-twitter-stance-biden-KE-MLM"
 
 # load model
 tokenizer = AutoTokenizer.from_pretrained(pretrained_LM_path)
