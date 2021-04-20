@@ -66,7 +66,7 @@ id2label = {
 
 ##### Prediction Favor #####
 sentence = "Go Go Biden!!!"
-inputs = tokenizer(sentence.lower(), return_tensors="pt")
+inputs = tokenizer(sentence, return_tensors="pt")
 outputs = model(**inputs)
 predicted_probability = torch.softmax(outputs[0], dim=1)[0].tolist()
 
