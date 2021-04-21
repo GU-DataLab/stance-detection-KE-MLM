@@ -11,9 +11,9 @@ This data sets are for research purposes only - coming soon 🔥
 - Data format is CSV with only 3 columns: `"tweet_id","text","label"`
 - Labels = `{0:"AGAINST", 1:"FAVOR", 2:"NONE"}`
 
-The data set contains 2500 manually-stance-labeled tweets, 1250 for each candidate (Joe Biden and Donald Trump). These tweets were sampled from the unlabeled set that our research team collected English tweets related to the 2020 US Presidential election. Through the Twitter Streaming API, we collected data using election-related hashtags and keywords. Between January 2020 and September 2020, we collected over 5 million tweets, not including quotes and retweets. These unlabeled tweets were used to fine-tune all of our language models. The labeled data that we publicly provide were sampled from this 5M set and were labeled using Amazon Mechanical Turk. Please see [our paper](https://2021.naacl.org/program/accepted/) for more detail about the data sets.
+The data set contains 2500 manually-stance-labeled tweets, 1250 for each candidate (Joe Biden and Donald Trump). These tweets were sampled from the unlabeled set that our research team collected English tweets related to the 2020 US Presidential election. Through the Twitter Streaming API, we collected data using election-related hashtags and keywords. Between January 2020 and September 2020, we collected over 5 million tweets, not including quotes and retweets. These unlabeled tweets were used to fine-tune all of our language models. The labeled data that we publicly provide were sampled from this 5M set and were labeled using Amazon Mechanical Turk.
 
-The stance label distributions are shown in the table below.
+The stance label distributions are shown in the table below. Please refer to [our paper](https://2021.naacl.org/program/accepted/) for more detail about the data sets.
 
 |       | %SUPPORT | %OPPOSE | %NEUTRAL |
 | ----- | :----: | :----: | :----: |
