@@ -91,3 +91,10 @@ If you feel our paper and resources are useful, please consider citing our work!
     url={#}
 }
 ```
+
+## Troubleshoot
+
+### 1. Can't load the model
+- From [this issue](https://github.com/GU-DataLab/stance-detection-KE-MLM/issues/1)
+- Check the dependencies `pytorch==1.8.1` and `transformers==4.5.1`
+- Try removing `tensorflow`
