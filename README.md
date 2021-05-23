@@ -1,6 +1,6 @@
 # Stance Detection
 
-This repository is for the paper - [Knowledge Enhance Masked Language Model for Stance Detection](https://2021.naacl.org/program/accepted/), NAACL 2021. 🚀
+This repository is for the paper - [Knowledge Enhance Masked Language Model for Stance Detection](https://www.aclweb.org/anthology/2021.naacl-main.376), NAACL 2021. 🚀
 
 Code for log-odds-ratio with Dirichlet prior is at [log-odds-ratio](https://github.com/kornosk/log-odds-ratio) repository.
 
@@ -13,7 +13,7 @@ This data sets are for research purposes only - coming soon 🔥
 
 The data set contains 2500 manually-stance-labeled tweets, 1250 for each candidate (Joe Biden and Donald Trump). These tweets were sampled from the unlabeled set that our research team collected English tweets related to the 2020 US Presidential election. Through the Twitter Streaming API, we collected data using election-related hashtags and keywords. Between January 2020 and September 2020, we collected over 5 million tweets, not including quotes and retweets. These unlabeled tweets were used to fine-tune all of our language models. The labeled data that we publicly provide were sampled from this 5M set and were labeled using Amazon Mechanical Turk.
 
-The stance label distributions are shown in the table below. Please refer to [our paper](https://2021.naacl.org/program/accepted/) for more detail about the data sets.
+The stance label distributions are shown in the table below. Please refer to [our paper](https://www.aclweb.org/anthology/2021.naacl-main.376.pdf) for more detail about the data sets.
 
 |       | %SUPPORT | %OPPOSE | %NEUTRAL |
 | ----- | :----: | :----: | :----: |
@@ -86,9 +86,10 @@ If you feel our paper and resources are useful, please consider citing our work!
 @inproceedings{kawintiranon2021knowledge,
     title={Knowledge Enhanced Masked Language Model for Stance Detection},
     author={Kawintiranon, Kornraphop and Singh, Lisa},
-    booktitle={Proceedings of the 2021 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)},
+    booktitle={Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
     year={2021},
-    url={#}
+    publisher={Association for Computational Linguistics},
+    url={https://www.aclweb.org/anthology/2021.naacl-main.376}
 }
 ```
 
