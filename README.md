@@ -6,7 +6,7 @@ Code for log-odds-ratio with Dirichlet prior is at [log-odds-ratio](https://gith
 
 ## Data Sets
 
-This data sets are for research purposes only - coming soon 🔥
+This data sets are for research purposes only - [Download](https://portals.mdi.georgetown.edu/public/stance-detection-KE-MLM) 🔥
 
 - Data format is CSV with only 3 columns: `"tweet_id","text","label"`
 - Labels = `{0:"AGAINST", 1:"FAVOR", 2:"NONE"}`
